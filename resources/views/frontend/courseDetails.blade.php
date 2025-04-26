@@ -584,7 +584,7 @@
                                                     </h6>
                                                     <p class="font-para--md">
                                                         {{($course->instructor?->designation) ? $course->instructor?->designation : 'No
-                                                        Designation'}}
+                                                            Designation'}}
                                                     </p>
                                                     <div class="d-flex align-items-center instructor-text-bottom">
                                                         <div class="d-flex align-items-center ratings-icon">
@@ -2316,8 +2316,8 @@
                         <div class="cart">
                             <div class="cart__price">
                                 <div class="current-price">
-                                    <h3 class="font-title--sm">{{$course->price ? '৳' . $course->price : 'Free'}}</h3>
-                                    <p><del>{{$course->old_price ? '৳' . $course->old_price : ''}}</del></p>
+                                    <h3 class="font-title--sm">{{$course->price ? '₹' . $course->price : 'Free'}}</h3>
+                                    <p><del>{{$course->old_price ? '₹' . $course->old_price : ''}}</del></p>
                                 </div>
                                 <div class="current-discount">
                                     <p class="font-para--md">90% off</p>

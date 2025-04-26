@@ -83,15 +83,15 @@
                                                                             </li>
                                                                             <li class="list-group-item px-0 d-flex justify-content-between">
                                                                                 <span class="mb-0">Price :</span>
-                                                                                <strong>{{$d->price ? '৳' . $d->price : 'Free'}}</strong>
+                                                                                <strong>{{$d->price ? '₹' . $d->price : 'Free'}}</strong>
                                                                             </li>
                                                                             <li class="list-group-item px-0 d-flex justify-content-between">
                                                                                 <span class="mb-0">Status :</span>
                                                                                 <span class="badge 
-                                                                                @if($d->status == 0) badge-warning 
-                                                                                @elseif($d->status == 1) badge-danger 
-                                                                                @elseif($d->status == 2) badge-success 
-                                                                                @endif">
+                                                                                                            @if($d->status == 0) badge-warning 
+                                                                                                            @elseif($d->status == 1) badge-danger 
+                                                                                                            @elseif($d->status == 2) badge-success 
+                                                                                                            @endif">
                                                                                     @if($d->status == 0) {{__('Pending')}}
                                                                                     @elseif($d->status == 1) {{__('Inactive')}}
                                                                                     @elseif($d->status == 2) {{__('Active')}}

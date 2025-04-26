@@ -141,8 +141,8 @@
                                 <div class="col-lg-4 col-md-6 col-md-6 mb-4">
                                     <div class="contentCard contentCard--watch-course">
                                         <div class="contentCard-top">
-                                            <a href="#"><img src="{{asset('uploads/courses/' . $a->course?->image)}}" alt="images"
-                                                    class="img-fluid" /></a>
+                                            <a href="#"><img src="{{asset('uploads/courses/' . $a->course?->image)}}"
+                                                    alt="images" class="img-fluid" /></a>
                                         </div>
                                         <div class="contentCard-bottom">
                                             <h5>
@@ -487,7 +487,8 @@
                                                             class="purchase-area-items-start d-flex align-items-lg-center flex-column flex-lg-row">
                                                             <div class="image">
                                                                 <a href="#">
-                                                                    <img src="{{asset('uploads/courses/' . $data->image)}}" alt="Image" />
+                                                                    <img src="{{asset('uploads/courses/' . $data->image)}}"
+                                                                        alt="Image" />
                                                                 </a>
                                                             </div>
                                                             <div class="text d-flex flex-column flex-lg-row">
@@ -500,7 +501,7 @@
                                                                             {{$data->instructor}}</a>
                                                                     </p>
                                                                 </div>
-                                                                <p class="ms-2">{{$data->price ? ('৳' . $data->price) : 'Free'}}</p>
+                                                                <p class="ms-2">{{$data->price ? ('₹' . $data->price) : 'Free'}}</p>
                                                             </div>
                                                         </div>
                                                     @endforeach

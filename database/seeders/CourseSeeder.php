@@ -18,7 +18,7 @@ class CourseSeeder extends Seeder
         $courses = [
             [
                 'title_en' => 'Complete Web Development Bootcamp',
-                'price' => 49.99,
+                'price' => 4999,
                 'description_en' => 'This comprehensive course covers everything you need to become a full-stack web developer.',
                 'prerequisites_en' => 'Basic computer knowledge',
                 'type' => 'paid',
@@ -28,7 +28,7 @@ class CourseSeeder extends Seeder
             ],
             [
                 'title_en' => 'Data Science Fundamentals',
-                'price' => 59.99,
+                'price' => 5999,
                 'description_en' => 'Learn the foundations of data science with practical projects and real-world datasets.',
                 'prerequisites_en' => 'Basic programming knowledge',
                 'type' => 'paid',
@@ -38,7 +38,7 @@ class CourseSeeder extends Seeder
             ],
             [
                 'title_en' => 'UI/UX Design Masterclass',
-                'price' => 39.99,
+                'price' => 3999,
                 'description_en' => 'Master the principles of UI/UX design with this comprehensive course.',
                 'prerequisites_en' => 'No prerequisites',
                 'type' => 'paid',

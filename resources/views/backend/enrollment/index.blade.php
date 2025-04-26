@@ -54,14 +54,15 @@
                                                 @forelse ($enrollment as $e)
                                                     <tr>
                                                         <td><img class="rounded-circle" width="35" height="35"
-                                                                src="{{asset('uploads/students/' . $e->student?->image)}}" alt="">
+                                                                src="{{asset('uploads/students/' . $e->student?->image)}}"
+                                                                alt="">
                                                         </td>
                                                         <td><strong>{{$e->student?->name_en}}</strong></td>
                                                         <td><strong>{{$e->course?->title_en}}</strong></td>
                                                         <td><img class="img fluid" width="100"
                                                                 src="{{asset('uploads/courses/' . $e->course?->image)}}" alt="">
                                                         </td>
-                                                        <td><strong>{{$e->course?->price == null ? 'Free' : '৳' . $e->course?->price}}</strong>
+                                                        <td><strong>{{$e->course?->price == null ? 'Free' : '₹' . $e->course?->price}}</strong>
                                                         </td>
                                                         <td><strong>{{$e->enrollment_date}}</strong></td>
                                                         <td>

@@ -60,13 +60,13 @@
                                                         <td><strong>{{$d->instructor?->name_en}}</strong></td>
                                                         <td><strong>{{$d->courseCategory?->category_name}}</strong>
                                                         </td>
-                                                        <td><strong>{{$d->price ? '৳' . $d->price : 'Free'}}</strong></td>
+                                                        <td><strong>{{$d->price ? '₹' . $d->price : 'Free'}}</strong></td>
                                                         <td>
                                                             <span class="badge 
-                                                            @if($d->status == 0) badge-warning 
-                                                            @elseif($d->status == 1) badge-danger 
-                                                            @elseif($d->status == 2) badge-success 
-                                                            @endif">
+                                                                    @if($d->status == 0) badge-warning 
+                                                                    @elseif($d->status == 1) badge-danger 
+                                                                    @elseif($d->status == 2) badge-success 
+                                                                    @endif">
                                                                 @if($d->status == 0) {{__('Pending')}}
                                                                 @elseif($d->status == 1) {{__('Inactive')}}
                                                                 @elseif($d->status == 2) {{__('Active')}}

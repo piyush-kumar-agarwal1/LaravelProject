@@ -18,12 +18,10 @@ class LessonSeeder extends Seeder
 
             for ($i = 1; $i <= $lessonCount; $i++) {
                 DB::table('lessons')->insert([
-                    'title_en' => "Lesson $i: " . $this->getLessonTitle($i),
-                    'description_en' => "This lesson covers important concepts related to topic $i.",
+                    'title' => "Lesson $i: " . $this->getLessonTitle($i),
+                    'description' => "This lesson covers important concepts related to topic $i.",
                     'course_id' => $courseId,
-                    'status' => 1,
-                    'video_link' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', // Sample video link
-                    'duration' => rand(10, 60) . ' minutes',
+                    'notes' => "Additional notes for lesson $i",
                     'created_at' => now(),
                     'updated_at' => now(),
                 ]);
